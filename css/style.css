@@ -2,46 +2,211 @@
 @import url(reset.css);
 
 /*header*/
-    #header {width:100%;height:160px;z-index:1000;background-color: #deebdd;
-        background:#deebdd ;opacity:.8;position: absolute;transition: all 0.35s;}
-    #header #hInner {width:98%;margin:0 auto;position: relative;}
-    #header #hInner .hlogo {text-align: center;padding-top:2rem;height:8rem}
+#header {
+  width: 100%;
+  height: 160px;
+  z-index: 1000;
+  background-color: #deebdd;
+  background: #deebdd;
+  opacity: 0.8;
+  position: absolute;
+  transition: all 0.35s;
+}
+#header #hInner {
+  width: 98%;
+  margin: 0 auto;
+  position: relative;
+}
+#header #hInner .hlogo {
+  text-align: center;
+  padding-top: 2rem;
+  height: 8rem;
+}
 
-    #header #hInner .hlnb {;position: absolute;right:4rem;top:4rem}
-    #header #hInner .hlnb li {display: inline-block;box-shadow: 0 2px 2px rgba(220,220,220,.3);}
-    #header #hInner .hlnb li a {display:block;padding:1.4rem .8rem 0 1.4rem;font-size:1.5rem}
-        
-    #header #hInner nav {height:50px;position: relative;}
-    #header #hInner nav .gnb {text-align:center;}
-    #header #hInner nav .gnb > li{display:inline-block;vertical-align: top;}
-    #header #hInner nav .gnb > li > a {text-align:center;display:block;font-size:1.9rem;padding:1.5rem 2rem }
-    #header #hInner nav .gnb ul {width:100%;display:none}
-    #header #hInner nav .gnb li li a{text-align:center;line-height:2.6rem;font-size:1.6rem;display:block;}    
+#header #hInner .hlnb {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+}
+#header #hInner .hlnb li {
+  display: inline-block;
+  box-shadow: 0 2px 2px rgba(220, 220, 220, 0.3);
+}
+#header #hInner .hlnb li a {
+  display: block;
+  padding: 1.4rem 0.8rem 0 1.4rem;
+  font-size: 1.5rem;
+}
 
-    /*스크롤 고정 헤더*/
-        #header.sticky {position:fixed;background: #637c62;height:80px}
-        #header.sticky #hInner{width:98%;}
-        #header.sticky #hInner .hlogo {text-align: left;padding-top:2rem
-            ;height:8rem}
-        #header.sticky #hInner .hlnb {;position: absolute;right:4rem;top:1.5rem}
-        #header.sticky #hInner .hlnb a{color:#fff;}
-        #header.sticky #hInner nav {height:50px;width:auto;position: absolute;top:1.5rem;left:50%;transform: translateX(-50%);}
-        #header.sticky #hInner nav .gnb > li > a {color:#fff}
+#header #hInner nav {
+  height: 50px;
+  position: relative;
+}
+#header #hInner nav .gnb {
+  text-align: center;
+}
+#header #hInner nav .gnb > li {
+  display: inline-block;
+  vertical-align: top;
+}
+#header #hInner nav .gnb > li > a {
+  text-align: center;
+  display: block;
+  font-size: 1.9rem;
+  padding: 1.5rem 2rem;
+}
+#header #hInner nav .gnb ul {
+  width: 100%;
+  display: none;
+}
+#header #hInner nav .gnb li li a {
+  text-align: center;
+  line-height: 2.6rem;
+  font-size: 1.6rem;
+  display: block;
+}
+
+/*스크롤 고정 헤더*/
+#header.sticky {
+  position: fixed;
+  background: #637c62;
+  height: 80px;
+}
+#header.sticky #hInner {
+  width: 98%;
+}
+#header.sticky #hInner .hlogo {
+  text-align: left;
+  padding-top: 2rem;
+  height: 8rem;
+}
+#header.sticky #hInner .hlnb {
+  position: absolute;
+  right: 4rem;
+  top: 1.5rem;
+}
+#header.sticky #hInner .hlnb a {
+  color: #fff;
+}
+#header.sticky #hInner nav {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#header.sticky #hInner nav .gnb > li > a {
+  color: #fff;
+}
 /*visual*/
-    #visual {width:100%;}
-    #visual .slickSlider {height:650px;overflow:hidden;position: relative;}
-    #visual .slickSlider li {width:100%;height:650px;background-color: #eee}
-    #visual .slickSlider li a {display:block}
-    #visual .slickSlider .slick-arrow {display:block;font-size:0;color:transparent;z-index:30;
-        border:0;width:6rem;height:10rem;position:absolute;top:50%;transform: translateY(-50%);}
-    #visual .slickSlider .slick-arrow::before {font-size:6rem;color:rgb(92, 92, 92);}
-    #visual .slickSlider .slick-next {right:.5rem}
-    #visual .slickSlider .slick-next::before {content:'\e940';font-family:'xeicon'}
-    #visual .slickSlider .slick-prev {left:.5rem}
-    #visual .slickSlider .slick-prev::before {content:'\e93d';font-family:'xeicon'}
+#visual {
+  width: 100%;
+  position: relative;
+}
+#visual .slickSlider {
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+#visual .slickSlider li {
+  width: 100%;
+  height: 650px;
+  background-color: #eee;
+}
+#visual .slickSlider li a {
+  display: block;
+}
+#visual .slickSlider .slick-arrow {
+  display: block;
+  font-size: 0;
+  color: transparent;
+  z-index: 30;
+  border: 0;
+  width: 6rem;
+  height: 10rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#visual .slickSlider .slick-arrow::before {
+  font-size: 6rem;
+  color: rgb(92, 92, 92);
+}
+#visual .slickSlider .slick-next {
+  right: 0.5rem;
+}
+#visual .slickSlider .slick-next::before {
+  content: "\e940";
+  font-family: "xeicon";
+}
+#visual .slickSlider .slick-prev {
+  left: 0.5rem;
+}
+#visual .slickSlider .slick-prev::before {
+  content: "\e93d";
+  font-family: "xeicon";
+}
 
+#visual .slick-tools {
+  position: absolute;
+  left: 30%;
+  top: 60%;
+  background-color: red;
+}
+#visual .slickSlider .slick-dots {
+  z-index: 500;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  width: 10rem;
+  height: 0.5rem;
+  background: #000;
+  border: 0.1rem solid #000;
+}
+
+#visual .slickSlider .slick-dots li {
+  float: left;
+  width: 25%;
+}
+#visual .btn-control {
+  font-size: 0;
+  color: transparent;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 80%;
+}
+#visual .pause::before {
+  content: "\ea3b";
+  font-family: "xeicon";
+  color: #000;
+  font-size: 3rem;
+}
+#visual .play::before {
+  content: "\ea3e";
+  font-family: "xeicon";
+  color: #000;
+  font-size: 3rem;
+}
 /*본문*/
-    #container .banner {margin:5rem auto;width:100%;background-color: #aaa;display: table;}
-    #container .banner .txt {display: table-cell;vertical-align: middle;padding:3rem 0}
-    #container .banner .txt p{;text-align:center;color:#fff;font-weight:bold;font-size:4rem;letter-spacing:.3rem}
-    
+#container .banner {
+  margin: 5rem auto;
+  width: 100%;
+  background-color: #aaa;
+  display: table;
+}
+#container .banner .txt {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 0;
+}
+#container .banner .txt p {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
