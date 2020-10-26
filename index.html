@@ -19,11 +19,15 @@
     </div>
     <header id="header">
         <div id="hInner">
-            <h1 class="hlogo"><a href="index.html"><img src="img/hlogo.png" alt="상단로고"></a></h1>
+            <h1 class="hlogo">
+                <a href="index.html">
+                    univera
+                <!--<img src="img/hlogo.jpg" alt="상단로고">-->
+                </a></h1> 
             <ul class="hlnb">
                 <li><a href="#">매장찾기</a></li>
                 <li><a href="#">로그인</a></li>
-                <li><a href="#">검색</a></li>
+                <li class="search"><a href="#" >검색</a></li>
             </ul>
             <h2 class="blind">메인메뉴</h2>
             <nav>
@@ -130,56 +134,76 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="img/best1.jpg" alt="베스트1">
-                            <div></div>
+                            <div class="img-box">
+                                <img src="img/best1.jpg" alt="베스트1">
+                            </div>
+                            <div class="txt-box">
+                                <h4 class="best-tit">비움 클렌즈</h4>
+                                <p class="best-desc">고민은 비우고 비움 클렌즈</p>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/best2.jpg" alt="베스트2">
-                            <div></div>
+                            <div class="img-box">
+                                <img src="img/best2.jpg" alt="베스트2">
+                            </div>
+                            <div class="txt-box">
+                                <h4 class="best-tit">알로엔 나이트 밸런싱 젤</h4>
+                                <p class="best-desc">자면서 피부를 건강하고 아름답게</p>                                
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/best3.jpg" alt="베스트3">
-                            <div></div>
+                            <div class="img-box">
+                                <img src="img/best3.jpg" alt="베스트3">
+                            </div>
+                            <div class="txt-box">
+                                <h4 class="best-tit">유산균 플러스</h4>
+                                <p class="best-desc">장 까지 살아남는 코팅 유산균</p>                               
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/best4.jpg" alt="베스트4">
-                            <div></div>
+                            <div class="img-box">
+                                <img src="img/best4.jpg" alt="베스트4">
+                            </div>
+                            <div class="txt-box">
+                                <h4 class="best-tit">힐탑가든 베이비 알로에 속살크림</h4>
+                                <p class="best-desc">100% 베이비알로에 농축크림</p>                                
+                            </div>
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="services">
-            <h2 class="">UNIVERA's NEWS</h2>
-            <div class="service1">
-                <h3>유니베라소식</h3>
-                <ul>
-                    <li><a href="#">[보도자료]'주름개선과 미백,보습까지 한 번에'</a></li>
-                    <li><a href="#">[보도자료] 유니베라, 멤버스몰에서 9월 스페셜</a></li>
-                    <li><a href="#">[보도자료] 유니베라, 장애여성대상 자궁경부암</a></li>
-                    <li><a href="#">[보도자료] 유니베라 '향균 프로폴리스' 출시</a></li>
-                </ul>
-                <p class="more"><a href="#">더보기</a></p>
-            </div>
-            <div class="service2">
-                <h3>웰니스</h3>
-                <ul>
-                    <li><a href="#">[땅위에 심은 별] 독감 예방접종을 맞았다면, 알로에도 잊지</a></li>
-                    <li><a href="#">[옷 의(衣)] 탄생! 알로엔 더 골드!</a></li>
-                    <li><a href="#">[땅위에 심은 별] 구내염, 어떻게 해결하지?</a></li>
-                    <li><a href="#">[밥 식(食)] 장마 폭염에 더 조심해야하는 여름철 식중독...</a></li>
-                </ul>
-                <p class="more"><a href="#">더보기</a></p>
-            </div>
-            <div class="service3">
-                <iframe src="http://유튜브" frameborder="0"></iframe>
-            </div>
+        <section class="services clearfix">
+            <div class="services-inner">
+                <h2>UNIVERA's NEWS</h2>
+                <div class="service1">
+                    <h3>유니베라소식</h3>
+                    <ul>
+                        <li><a href="#">[보도자료]'주름개선과 미백,보습까지 한 번에'</a></li>
+                        <li><a href="#">[보도자료] 유니베라, 멤버스몰에서 9월 스페셜</a></li>
+                        <li><a href="#">[보도자료] 유니베라, 장애여성대상 자궁경부암</a></li>
+                        <li><a href="#">[보도자료] 유니베라 '향균 프로폴리스' 출시</a></li>
+                    </ul>
+                    <p class="more"><a href="#">더보기</a></p>
+                </div>
+                <div class="service2">
+                    <h3>웰니스</h3>
+                    <ul>
+                        <li><a href="#">[땅위에 심은 별] 독감 예방접종을 맞았다면, 알로에도 잊지</a></li>
+                        <li><a href="#">[옷 의(衣)] 탄생! 알로엔 더 골드!</a></li>
+                        <li><a href="#">[땅위에 심은 별] 구내염, 어떻게 해결하지?</a></li>
+                        <li><a href="#">[밥 식(食)] 장마 폭염에 더 조심해야하는 여름철 식중독...</a></li>
+                    </ul>
+                    <p class="more"><a href="#">더보기</a></p>
+                </div>
+                <div class="service3">
+                    <iframe class="video1" src="https://www.youtube.com/embed/k-9nR_xiAwM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
         </section>
         <section class="store">
             <a href="#">

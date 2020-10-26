@@ -6,9 +6,6 @@
   width: 100%;
   height: 160px;
   z-index: 1000;
-  background-color: #deebdd;
-  background: #deebdd;
-  opacity: 0.8;
   position: absolute;
   transition: all 0.35s;
 }
@@ -21,6 +18,8 @@
   text-align: center;
   padding-top: 2rem;
   height: 8rem;
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
 }
 
 #header #hInner .hlnb {
@@ -32,6 +31,15 @@
   display: inline-block;
   box-shadow: 0 2px 2px rgba(220, 220, 220, 0.3);
 }
+#header #hInner .hlnb li.search a {
+  font-size: 0;
+}
+#header #hInner .hlnb li.search a::before {
+  content: "\e97a";
+  font-size 2rem;
+  font-famiy:'xeicon';
+
+}
 #header #hInner .hlnb li a {
   display: block;
   padding: 1.4rem 0.8rem 0 1.4rem;
@@ -41,6 +49,7 @@
 #header #hInner nav {
   height: 50px;
   position: relative;
+  margin-top: -20px;
 }
 #header #hInner nav .gnb {
   text-align: center;
@@ -54,6 +63,7 @@
   display: block;
   font-size: 1.9rem;
   padding: 1.5rem 2rem;
+  color: #555;
 }
 #header #hInner nav .gnb ul {
   width: 100%;
@@ -77,8 +87,11 @@
 }
 #header.sticky #hInner .hlogo {
   text-align: left;
-  padding-top: 2rem;
-  height: 8rem;
+  padding: 1.2rem 0 2rem;
+  /*height: 8rem;*/
+}
+#header.sticky #hInner .hlogo a {
+  color: #f1f1f1;
 }
 #header.sticky #hInner .hlnb {
   position: absolute;
@@ -93,6 +106,7 @@
   width: auto;
   position: absolute;
   top: 1.5rem;
+  margin-top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -117,10 +131,15 @@
 #visual .slickSlider li a {
   display: block;
 }
+#visual .slickSlider li a img {
+  width: 100%;
+  height: 650px;
+}
 #visual .slickSlider .slick-arrow {
   display: block;
   font-size: 0;
   color: transparent;
+  background: transparent;
   z-index: 30;
   border: 0;
   width: 6rem;
@@ -152,50 +171,64 @@
   position: absolute;
   left: 30%;
   top: 60%;
-  background-color: red;
 }
 #visual .slickSlider .slick-dots {
   z-index: 500;
   position: absolute;
-  left: 30%;
-  top: 50%;
-  width: 10rem;
-  height: 0.5rem;
-  background: #000;
-  border: 0.1rem solid #000;
+  left: 5%;
+  top: 80%;
+  width: 45rem;
+  height: 5px;
 }
 
 #visual .slickSlider .slick-dots li {
   float: left;
-  width: 25%;
+  width: 20%;
+  height: 5px;
+  background: rgba(199, 199, 199, 0.8);
+  cursor: pointer;
+  transition: all 0.39s;
 }
+#visual .slickSlider .slick-dots li button {
+  border: 0px;
+  font-size: 0;
+  cursor: pointer;
+}
+#visual .slickSlider .slick-dots li.slick-active {
+  float: left;
+  width: 20%;
+  height: 5px;
+  background: rgba(44, 44, 44, 0.8);
+}
+
 #visual .btn-control {
   font-size: 0;
   color: transparent;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: transparent;
   border: 0;
   position: absolute;
-  top: 80%;
+  top: 78.5%;
+  left: 34%;
 }
 #visual .pause::before {
   content: "\ea3b";
   font-family: "xeicon";
-  color: #000;
-  font-size: 3rem;
+  color: rgb(27, 27, 27);
+  font-size: 2.5rem;
 }
 #visual .play::before {
   content: "\ea3e";
   font-family: "xeicon";
-  color: #000;
-  font-size: 3rem;
+  color: rgb(27, 27, 27);
+  font-size: 2.5rem;
 }
 /*본문*/
 #container .banner {
   margin: 5rem auto;
   width: 100%;
-  background-color: #aaa;
+  background-color:#bfe8e0;
   display: table;
 }
 #container .banner .txt {
@@ -205,7 +238,7 @@
 }
 #container .banner .txt p {
   text-align: center;
-  color: #fff;
+  color: #014751;
   font-weight: bold;
   font-size: 4rem;
   letter-spacing: 0.3rem;
@@ -215,10 +248,93 @@
   margin-bottom: 5rem;
 }
 #container .best .best-inner {
-  width: 98%;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px 90px;
 }
 #container .best .best-inner h2 {
   padding-top: 60px;
   font-size: 4.5rem;
   text-align: center;
+  letter-spacing: 0.3rem;
+}
+#container .best .best-inner ul {
+  margin-top: 4rem;
+}
+#container .best .best-inner ul li {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding: 0 14px;
+  text-align: center;
+  transition: ease-in-out 0.5s;
+}
+#container .best .best-inner ul li a {
+  display: block;
+  transition: ease-in-out 0.5s;
+}
+#container .best .best-inner ul li a .img-box {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+#container .best .best-inner ul li a .img-box img {
+  transition: transform 700ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;
+  backface-visibility: hidden;
+}
+#container .best .best-inner ul li a .img-box:hover img {
+  transform: scale(1.06);
+  box-sizing: border-box;
+  transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;
+}
+#container .best .best-inner ul li a .txt-box {
+  margin-top: 28px;
+}
+#container .best .best-inner ul li a .txt-box .best-tit {
+  font-size: 2rem;
+}
+#container .best .best-inner ul li a .txt-box .best-desc {
+  font-size: 1.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+#container .services .services-inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px 90px;
+}
+#container .services .services-inner h2 {
+  padding-top: 60px;
+  font-size: 4.5rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+#container .services .services-inner > div {
+  box-sizing: border-box;
+  float: left;
+  width: 33.333333%;
+  padding: 0 14px;
+  margin-top: 4rem; 
+  position:relative;
+   
+}
+#container .services .services-inner > div.service1 h3,
+#container .services .services-inner > div.service2 h3 {
+  font-size:1.9rem;
+  font-weight:bold;
+  color:#333;
+  border:.1rem solid #014751;
+  box-sizing: border-box;
+  padding:1rem 0
+}
+#container .services .services-inner > div.service1 ul li a,
+#container .services .services-inner > div.service2 ul li a{
+  font-size:1.6rem;
+  color:#333;
+  padding:1rem 0
+}
+#container .services .services-inner .service1 {
+  padding:1rem .5rem
 }

@@ -8,12 +8,15 @@ $(function(){
         autoplay:true,
     });
 
-    $('.play').on('click',function(){
-        $(this).addClass('on');
+    $('.pause').on('click',function(){
+        $(this).css('display','none');
+        $('.play').css('display','block');
         $('.slickSlider').slick('slickPause');
     });
-    $('.play.on').on('click',function(){
-        $(this).removeClass('on');
+    
+    $('.play').on('click',function(){
+        $(this).css('display','none');
+        $('.pause').css('display','block');
         $('.slickSlider').slick('slickPlay');
     });
 
