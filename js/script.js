@@ -11,13 +11,13 @@ $(function(){
     $('.pause').on('click',function(){
         $(this).css('display','none');
         $('.play').css('display','block');
-        $('.slickSlider').slick('slickPause');
+        $('.js-slide').slick('slickPause');
     });
     
     $('.play').on('click',function(){
         $(this).css('display','none');
         $('.pause').css('display','block');
-        $('.slickSlider').slick('slickPlay');
+        $('.js-slide').slick('slickPlay');
     });
 
     //상단메뉴 고정
