@@ -21,7 +21,7 @@ $(function(){
     });
 
     //상단메뉴 고정
-    let header = $('#header');
+    let header = $('.header');
     $(window).scroll(function(){
         if($(this).scrollTop()>0){
             header.addClass('sticky');

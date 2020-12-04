@@ -14,11 +14,11 @@
 </head>
 <body>
   <div id="skipNav">
-      <a href="#container">본문 바로가기</a>
-      <a href="#footer">푸터 바로가기</a>
+      <a href=".container">본문 바로가기</a>
+      <a href=".footer">푸터 바로가기</a>
   </div>
-  <header id="header">
-      <div id="hInner">
+  <header class="header">
+      <div class="hInner">
         <h1 class="hlogo">
           <a href="index.html">
               univera
@@ -28,7 +28,7 @@
         <ul class="hlnb">
           <li><a href="#">매장찾기</a></li>
           <li><a href="#">로그인</a></li>
-          <li class="search"><a href="#" >검색</a></li>
+          <li><button class="search" type="submit">검색</button></li>
         </ul>
         <h2 class="blind">메인메뉴</h2>
         <nav>
@@ -89,7 +89,7 @@
         </nav>
       </div>
   </header>
-  <section id="visual">
+  <section class="visual">
     <ul class="slickSlider">
       <li>
         <a href="#">
@@ -118,14 +118,18 @@
       </li>
     </ul>
 
-    <div class="controllbox">
-      <button class="btn-control pause">정지</button>
-      <button class="btn-control play">시작</button>
-      <div class="slick-dots"></div>
+    <div class="controllbox-outer">
+      <div class="controllbox-inner">
+        <div class="slider-controls">
+          <button class="btn-control pause">정지</button>
+          <button class="btn-control play">시작</button>
+          <ul class="slick-dots" style role="tablist"></ul>
+        </div>
+      </div>
     </div>
   </section>
   
-  <section id="container">
+  <section class="container">
     <section class="banner">
       <a href="#" class="txt">
         <p>멤버스몰<br> 구경하러가기</p>
